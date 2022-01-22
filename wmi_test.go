@@ -13,8 +13,8 @@ import (
 	"testing"
 	"time"
 
-	ole "github.com/go-ole/go-ole"
-	"github.com/go-ole/go-ole/oleutil"
+	ole "github.com/x-clone/go-ole"
+	"github.com/x-clone/go-ole/oleutil"
 )
 
 func TestQuery(t *testing.T) {
@@ -288,7 +288,7 @@ func getRSS(url string, xmlhttp *ole.IDispatch, MinimalTest bool) (int, error) {
 
 // Testing go-ole/oleutil
 // Run using: go test -run TestMemoryOLE -timeout 60m
-// Code from https://github.com/go-ole/go-ole/blob/master/example/msxml/rssreader.go
+// Code from https://github.com/x-clone/go-ole/blob/master/example/msxml/rssreader.go
 func _TestMemoryOLE(t *testing.T) {
 	defer func() {
 		if r := recover(); r != nil {
